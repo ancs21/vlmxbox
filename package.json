@@ -1,6 +1,6 @@
 {
   "name": "vlmxbox",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Turnkey VLM server on Modal.com serverless GPU — one command to run open-source LLMs with vLLM",
   "license": "Apache-2.0",
   "type": "module",

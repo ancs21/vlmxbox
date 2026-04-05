@@ -16,6 +16,7 @@ Usage:
   vlmxbox restart [options]  Stop and start with new config
   vlmxbox status             Show sandbox status
   vlmxbox presets            List available model presets
+  vlmxbox upgrade            Upgrade vlmxbox to the latest version
 
 Options:
   --preset <name>       Use a model preset (default: ${DEFAULT_PRESET})
@@ -136,6 +137,11 @@ async function main() {
     }
     case "presets": {
       printPresets();
+      break;
+    }
+    case "upgrade": {
+      const { upgrade } = await import("./commands/upgrade");
+      await upgrade();
       break;
     }
     default:

@@ -1,0 +1,7 @@
+node_modules/
+dist/
+vlmxbox
+.env
+.DS_Store
+*.tgz
+.vlmxbox-state.json
